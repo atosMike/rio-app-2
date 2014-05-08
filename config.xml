@@ -15,6 +15,8 @@
 		    Team Chocobo 
 		</author>
 		
+		<icon src="img/icon.png" />
+		
 		<preference name="permissions"                value="none" />
 		
 		<!-- Customize your app and platform with the preference element. -->
