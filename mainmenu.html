@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rio Fantasy Athletics - Home | Main Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scaleable=no">	
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" id="navbar">	
+</div>
+<div id="footerContainer32" class="footer">
+</div>
+
+<div class="container" id="mainBody">
+	<div id="username"></div>
+    
+    <br /><br /><br />    
+    <center>
+    <a href="#"><input type="button" value="Manage Team"  /></a><br />
+    <a href="#"><input type="button" value="View Leaderboards"  /></a><br />
+    <a href="#"><input type="button" value="News / Results"  /></a> 
+    </center>
+    <br /><br /><br />  
+</div>
+
+
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function()	{
+		$('#navbar').load('nav.html');
+		$('#footerContainer').load('footer.html');
+		$('#username').load('username.html');
+});
+</script>
+
+<footer>
+	<p align="center">Team Chocobo</p>
+</footer>
+
+</body>
+</html>

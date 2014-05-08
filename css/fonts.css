@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@font-face
+{
+font-family: impact;
+src: url(fonts/impact.ttf);
+}
+
+@font-face
+{
+font-family: MKStencil;
+src: url(fonts/MKStencilsansBlack.ttf);
+}
+
+@font-face
+{
+font-family: CharlieDotted;
+src:url(fonts/charlie_dotted.ttf);
+}
+
+@font-face
+{
+font-family: Moire;
+src:url(fonts/Moire-Regular.ttf);
+}
+
+
+@font-face
+{
+font-family: SegoeKeycaps;
+src:url(fonts/SegoeKeycaps.TTF);
+}
+
