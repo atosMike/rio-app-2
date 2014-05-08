@@ -32,7 +32,7 @@
         <!-- Table leaderboard -->
         <table name="leaderboard">
             <column name="username">Chocobo</column>
-            <column name="points">3510</column>
+            <column name="points">800</column>
         </table>
         <table name="leaderboard">
             <column name="username">Helix's Warriors</column>
@@ -80,7 +80,7 @@
         </table>
         <table name="leaderboard">
             <column name="username">Team Chocobo</column>
-            <column name="points">507</column>
+            <column name="points">2154</column>
         </table>
         <table name="leaderboard">
             <column name="username">MightyMorphinPowerPutties</column>
