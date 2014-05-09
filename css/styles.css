@@ -1,5 +1,5 @@
 body {
-	background:url(../img/stadium1.jpg) center repeat;
+	background:url(../img/stadium1.jpg) center repeat #fff;
 	background-size:cover;
 	margin:0;
 	color:#fff;
@@ -28,7 +28,8 @@ body {
 	margin-top:65px;
 	margin-bottom:5px;
 	padding:7px 7px 50px 7px;
-	border:1px solid #333;
+	border-top:1px solid #333;
+	border-bottom:1px solid #333;
 	background:url(../img/rings.png) bottom no-repeat, url(../img/opacity.png) repeat;
 }
 
@@ -446,12 +447,12 @@ text-align:center;
 	padding:3px;
 }
 
-#results table tr td:nth-child(4){
+#results table tr td:nth-child(4) {
 	padding-left:1px;
 	text-align:left;
 }
 
-#results table tr{
+#results table tr {
 	margin-bottom:10px;
 }
 
@@ -525,7 +526,6 @@ text-align:center;
 }
 
 #eventResults table tr:first-child td {
-	padding-left:3px;
 	text-transform:uppercase;
 	font-weight:bold;
 	color:#f7ac08;
@@ -595,12 +595,6 @@ img.countryFlag {
 
 
 #leaderboard table tr:first-child td  {
-/*	text-transform:uppercase;
-	font-weight:bold;
-	coalor:#166fab;
-	color:#f7ac08;
-	border-top:1px solid #fff;
-	border-bottom:1px solid #fff;*/
 	text-transform:uppercase;
 	font-weight:bold;
 	color:#f7ac08;
@@ -631,7 +625,6 @@ img.countryFlag {
 	width:100%;
 	border-collapse: separate;
     border-spacing: 0 3px;
-	width:100%;
 }
 
 #helpDetails table tr td, #pointsTable table tr td {
@@ -659,10 +652,10 @@ img.countryFlag {
 }
 
 #pointsTable table tr td {
-padding-left:10px;
+	padding-left:10px;
 }
 
-#pointsTable table tr td:nth-child(1) {
+#pointsTable table tr td:second-child {
 	padding-left:0px;
 	text-align:center;
 }
@@ -673,7 +666,81 @@ padding-left:10px;
 	color:#f7ac08;
 }
 
+#buildTeam table img {
+	margin-left:auto;
+	margin-right:auto;
+}
 
+#buildTeam  table tr td {
+	margin:0;
+	padding:10px 10px 0 10px;
+	text-align:center;
+}
+
+#buildTeam table tr:nth-child(1) td {
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+#buildTeam .pStyling {
+	color:#fff;
+	background:url(../img/grey-opacity.png) repeat;
+	width:;
+	1margin-left:-6px;
+	padding:3px 0 3px 0;
+	font-weight:bold;
+}
+
+
+#athleteInfo {
+	background:url(../img/grey-opacity.png) repeat;
+	padding-top:10px;
+}
+
+#athleteInfo table tr td {
+	margin:0;
+	padding:0;
+	text-align:left;	
+}
+
+#athleteInfo table tr td {
+	padding-left:10px;	
+}
+
+#athleteInfo table {
+	width:100%;
+	font-weight:bold;
+	font-size:14px;
+}
+
+
+#athleteInfo table tr td img {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.nameheading {
+	color:#f7ac08;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.AthCountryName {
+	background:#fff;
+	color:#166fab;
+	font-weight:bold;
+	font-size:16px;
+	float:left;
+	margin-top:5px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:5px;
+	width:auto;
+	height:22px;
+	text-align:center;
+/*	padding:0.25px 2px 0.25px 2px;
+*/
+}
 /*
 #footerContainer {
 	position:absolute;
