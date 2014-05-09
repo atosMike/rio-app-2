@@ -11,123 +11,32 @@
 </head>
 
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" id="navbar"></div>
-<div id="footerContainer" class="footer"></div>
+	<div class="navbar navbar-inverse navbar-fixed-top" id="navbar"></div>
+	<div id="footerContainer" class="footer"></div>
 
-<div class="container" id="mainBody">
-<div id="username"></div>
-<div style="clear:both"></div>
-	<p align="center" class="headings">Team Management</p>
-	<p align="center">Your Picks</p>
-    
-      <div id="subMenu">
-      	<ul>
-			<li><a href="#" class="active">Build</a></li>
-			<li><a href="#">Manage</a></li>
-		</ul>
-	  </div>
-     
-     <br />
-      <div id="buildTeam">
-      <p align="center" class="pStyling"><span class="glyphicon glyphicon-star starPadding"></span><br />100m</p>
-      
-      <center>
-      <table border="0">
-      	<tr>
-        	<td>Mens</td>
-            <td>Womens</td>
-        </tr>
-
-      	<tr>
-        	<td><img class="img-responsive" src="img/bolt.png"/> </td>
-            <td><img class="img-responsive" src="img/sailer.png"/> </td>
-        </tr>
-              
-        <tr>
-        	<td><a href="bolt-home.html"><span class="customLabel">Usain Bolt</span></a></td>
-            <td><a href="#"><span class="customLabel">Verena Sailer</span></a></td>
-        </tr>
-      </table>
-	
-    <br />
-      <p align="center" class="pStyling"><span class="glyphicon glyphicon-star starPadding"></span><br />200m</p>
-      <table border="0">
-      	<tr>
-        	<td>Mens</td>
-            <td>Womens</td>
-        </tr>
-
-      	<tr>
-        	<td><img class="img-responsive" src="img/gemeli.png"/> </td>
-            <td><img class="img-responsive" src="img/felix.png"/> </td>
-        </tr>
-              
-        <tr>
-        	<td><a href="#"><span class="customLabel">Adam Gemeli</span></a></td>
-            <td><a href="#"><span class="customLabel">Allyson Felix</span></a></td>
-        </tr>
-      </table>      
-      
-    <br />
-      <p align="center" class="pStyling"><span class="glyphicon glyphicon-star starPadding"></span><br />400m</p>
-      <table border="0">
-      	<tr>
-        	<td>Mens</td>
-            <td>Womens</td>
-        </tr>
-
-      	<tr>
-        	<td><img class="img-responsive" src="img/male-shadow.png"/> </td>
-            <td><img class="img-responsive" src="img/female-shadow.png"/> </td>
-        </tr>
-              
-        <tr>
-        	<td><a href="#"><span class="customLabel">Select</span></a></td>
-            <td><a href="#"><span class="customLabel">Select</span></a></td>
-        </tr>
-      </table> 
-      
-    <br />
-      <p align="center" class="pStyling"><span class="glyphicon glyphicon-star starPadding"></span><br />800m</p>
-      <table border="0">
-      	<tr>
-        	<td>Mens</td>
-            <td>Womens</td>
-        </tr>
-
-      	<tr>
-        	<td><img class="img-responsive" src="img/male-shadow.png"/> </td>
-            <td><img class="img-responsive" src="img/female-shadow.png"/> </td>
-        </tr>
-              
-        <tr>
-        	<td><a href="#"><span class="customLabel">Select</span></a></td>
-            <td><a href="#"><span class="customLabel">Select</span></a></td>
-        </tr>
-      </table> 
-
-    <br />
-      <p align="center" class="pStyling"><span class="glyphicon glyphicon-star starPadding"></span><br />4 x 100m Relay</p>
-      <table border="0">
-      	<tr>
-        	<td>Mens</td>
-            <td>Womens</td>
-        </tr>
-
-      	<tr>
-        	<td><img class="img-responsive" src="img/male-shadow.png"/> </td>
-            <td><img class="img-responsive" src="img/female-shadow.png"/> </td>
-        </tr>
-              
-        <tr>
-        	<td><a href="#"><span class="customLabel">Select</span></a></td>
-            <td><a href="#"><span class="customLabel">Select</span></a></td>
-        </tr>
-      </table> 
-                        
-      <center>
-  </div>
-</div>
+	<div class="container" id="mainBody">
+	<div id="username"></div>
+		<div style="clear:both"></div>
+			<p align="center" class="headings">Team Management</p>
+			<p align="center">Find your athletes</p>
+		
+			  <div id="subMenu">
+			  	<ul>
+					<li><a href="#" class="active">Build</a></li>
+					<li><a href="manage-team.html">Manage</a></li>
+				</ul>
+			  </div>
+			 
+		<br />
+		  
+		<form role="search">
+		  <div class="form-group">
+			<input type="text" class="form-control" placeholder="Search">
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>  
+		  
+	</div>
 
 
 <script src="js/jquery-1.11.0.min.js"></script>
