@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rio Fantasy Athletics - Leaderboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">	
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/fonts.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" id="navbar"></div>
+<div id="footerContainer" class="footer"></div>
+
+<div class="container" id="mainBody">
+<div id="username"></div>
+<div style="clear:both"></div>
+
+
+	<p align="center" class="headings">Leaderboard</p>
+
+    <div id="subMenu">
+        <ul>
+            <li><a href="#" class="active">All Players</a></li>
+            <li><a href="#">Buddies</a></li>
+        </ul>
+    </div>
+    <br />
+
+    <p style="color:#fff">You are viewing an overall rank of all players in the world.</p>
+    
+    <div id="leaderboard" class="table-responsive">
+      <table  border="0" id="top10">
+	  	<tr>
+	        <td>Rank</td>
+	        <td>Name</td>
+	        <td>Points</td>
+	    </tr>
+      </table>
+      <table>
+			<tr>
+				<td><button id="firstPage"><<</button></td>
+				<td><button class="nextPrev" id="prevPage"><</button></td>
+				<td><button class="nextPrev" id="nextPage">></button></td>
+				<td><button id="lastPage">>></button></td>
+			</tr>
+			<tr>
+				<td colspan="4" style="text-align:center">
+					Page number
+					<input type="text" id="pageNo" value="1" style="width:2em"/>
+					<button id="pageNoButton">Submit</button>
+				</td>
+			</tr>			
+		</table>
+    </div>
+    
+
+    <p style="color:#fff">You are ranked <span id="rank"></span> in the world!</p>
+
+</div>
+
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script type="text/javascript" src="js/leaderboardScoresDB.js"></script>
+
+
+</body>
+</html>
