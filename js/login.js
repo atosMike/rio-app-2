@@ -8,7 +8,7 @@ function login() {
     console.log(term);
     
     $.ajax({
-        url: "http://co-project.lboro.ac.uk/users/ttmhl/test/php/login.php",
+        url: "http://co-project.lboro.ac.uk/group07/login.php",
         type: "POST",
         data: term,
         dataType: 'json',
