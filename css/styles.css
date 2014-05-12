@@ -1,5 +1,5 @@
 body {
-	background:url(../img/stadium1.jpg) center repeat #fff;
+	background:url(../img/stadium.jpg) center repeat #fff;
 	background-size:cover;
 	margin:0;
 	color:#fff;
@@ -8,7 +8,14 @@ body {
 .table-responsive {
 	border:none;
 }
- 
+
+.titleHeading {
+	font-size:18px; 
+	font-weight:bold; 
+	color:#f7ac08;
+	text-transform:uppercase;
+}
+
 .navbar-toggle {
 	margin-right:-10px;
 }
@@ -30,7 +37,7 @@ body {
 	padding:7px 7px 50px 7px;
 	border-top:1px solid #333;
 	border-bottom:1px solid #333;
-	background:url(../img/rings.png) bottom no-repeat, url(../img/opacity.png) repeat;
+	background:url(../img/rings1.png) bottom no-repeat, url(../img/opacity.png) repeat;
 }
 
 #mainBody a {
@@ -159,6 +166,16 @@ body {
 
 #username {
 	width:100%;
+}
+
+
+#signupResults {
+	background:#FFF;
+/*	padding:3px;
+	border-radius:2px;
+	border: 1px solid #FC2E23;*/
+	color:#F00;
+	margin-bottom:3px;
 }
 
 #username p {
@@ -480,7 +497,7 @@ text-align:center;
 	padding-bottom:10px;
 }
 
-#eventInfo table tr td{
+#eventInfo table tr td {
 	margin:0;
 	padding:0px;
 	color:#fff;
@@ -492,8 +509,6 @@ text-align:center;
 }
 
 #eventInfo table tr:last-child td {
-/*	background:url(../img/place-marker.png) no-repeat;
-	background-position: left, 10px 10px;*/
 	padding-left:10px;
 	text-align:left;
 }
@@ -511,12 +526,15 @@ text-align:center;
 	width:100%;
 	color:#fff;
 	border-collapse: separate;
-    border-spacing: 0 3px;
+    border-spacing: 0 2px;
 }
 
 #eventResults table tr td {
 	margin:0;
-	padding:3px 0px 3px 0px;
+	padding:0;
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+	border-right:1px solid #999;
 }
 
 #eventResults table td {
@@ -529,25 +547,16 @@ text-align:center;
 	text-transform:uppercase;
 	font-weight:bold;
 	color:#f7ac08;
-	border-top:1px solid #fff;
-	border-bottom:1px solid #fff;
+	background-color:#CCC;
 }
 
-#eventResults table tr:last-child td{
-	border-bottom:1px solid #fff;
+#eventResults table tr td:last-child {
+	border-right:none;
 }
 
-/*Headings*/
-#eventResults table tr td:nth-child(2), td:nth-child(3){
-	padding-left:0px;
+#eventResults table tr td:nth-child(2), #eventResults table tr td:nth-child(3){
+	padding-left:5px;
 	text-align:left;
-}
-
-.resultHeadings {
-	font-family:Arial, Helvetica, sans-serif;
-	font-weight:bold;
-	text-transform:uppercase;
-	color:#F00;
 }
 
 .resultsInfo {
@@ -573,7 +582,6 @@ img.countryFlag {
 */
 }
 
-
 #leaderboard {
 	margin-top:10px;
 }
@@ -589,23 +597,20 @@ img.countryFlag {
 	padding:0;	
 	text-align:left;
 	background:url(../img/grey-opacity.png) repeat;
-	border-top:1px solid #fff;
-	border-bottom:1px solid #fff;
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+	border-right:1px solid #999;
 }
 
+#leaderboard table tr td:last-child {
+	border-right:none;
+}
 
 #leaderboard table tr:first-child td  {
 	text-transform:uppercase;
 	font-weight:bold;
 	color:#f7ac08;
-}
-
-#leaderboard table tr:first-child   {
-	text-align:center;
-}
-
-#leaderboard table tr:last-child td  {
-	border-bottom:1px solid #fff;
+	background-color:#CCC;
 }
 
 #leaderboard table tr td:nth-child(1) {
@@ -614,6 +619,10 @@ img.countryFlag {
 }
 
 #leaderboard table tr td:nth-child(2) {
+	padding-left:4px;
+}
+
+#leaderboard table tr td:nth-child(3) {
 	padding-left:4px;
 }
 
@@ -632,8 +641,8 @@ img.countryFlag {
 	padding:0;	
 	text-align:left;
 	background:url(../img/grey-opacity.png) repeat;
-	border-top:1px solid #fff;
-	border-bottom:1px solid #fff;
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
 }
 
 #helpDetails table tr td:nth-child(1) {
@@ -647,14 +656,18 @@ img.countryFlag {
 }
 
 #helpDetails table tr td:nth-child(1), #pointsTable table tr td:nth-child(1) {
-	border-right:1px solid #fff;
+	border-right:1px solid #999;
 	padding-left:2px;
 }
 
 #pointsTable table tr td {
 	padding-left:10px;
 }
-
+ 
+ #pointsTable table tr td:nth-child(1) {
+ text-align:center;
+ }
+ 
 #pointsTable table tr td:second-child {
 	padding-left:0px;
 	text-align:center;
@@ -691,20 +704,9 @@ img.countryFlag {
 	font-weight:bold;
 }
 
-
 #athleteInfo {
 	background:url(../img/grey-opacity.png) repeat;
-	padding-top:10px;
-}
-
-#athleteInfo table tr td {
-	margin:0;
-	padding:0;
-	text-align:left;	
-}
-
-#athleteInfo table tr td {
-	padding-left:10px;	
+	padding-top:0px;
 }
 
 #athleteInfo table {
@@ -713,6 +715,21 @@ img.countryFlag {
 	font-size:14px;
 }
 
+#athleteInfo table tr td {
+	margin:0;
+	text-align:left;
+	padding: 10px 10px 7px 10px;		
+}
+
+#athleteInfo table tr td {
+	border-bottom:1px solid #999;
+	border-top:1px solid #999;		
+}
+
+#athleteInfo tr:last-child td {
+	border:none;
+	border-bottom:1px solid #999;
+}
 
 #athleteInfo table tr td img {
 	margin-left:auto;
@@ -740,6 +757,134 @@ img.countryFlag {
 	text-align:center;
 /*	padding:0.25px 2px 0.25px 2px;
 */
+}
+
+#athleteBio {
+	padding-left:10px;
+}
+
+#athleteBio table {
+	width:100%;
+	border-collapse: separate;
+    border-spacing: 0 3px;
+}
+
+#athleteBio table td {
+	background:url(../img/grey-opacity.png) repeat;
+}
+
+#athleteBio table tr td {
+	margin:0;
+	padding:0 2px 0 2px;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+	border-right:1px solid #fff;
+}
+
+#athleteBio table tr td:nth-child(3) {
+	text-align:left;
+	padding-left:5px;
+}
+
+#athleteBio table tr td:last-child {
+	border-right:none;
+}
+
+#athleteBio table tr:first-child td {
+	color: #f7ac08;
+	text-transform:uppercase;
+	font-weight:bold;
+	background-color:#CCC;
+}
+
+.largeBtn {
+	width:100%;
+	margin-bottom:3px;
+	text-align:left;
+	opacity:0.95;
+	font-weight:bold;
+}
+
+.largeBtn:hover {
+	/* border:2px solid #041042;*/
+	color:#F90;
+}
+
+#featured {
+}
+
+#featured table {
+	border-collapse: separate;
+    border-spacing: 0 2px;
+}
+
+#featured table tr td {
+	margin:0;
+	padding:0;
+	text-align:left;
+	background:url(../img/grey-opacity.png) repeat;
+}
+
+#featured table tr td:nth-child(1)  {
+	border:1px solid #999;
+	padding-right:3px
+	padding-left:3px
+}
+
+#featured table tr td:nth-child(2), #featured table tr:nth-child(2) td, #featured table tr:nth-child(3) td  {
+	padding-left:5px;
+	padding-right:20px;
+	border:1px solid #999;
+}
+
+.featuredHeading {
+	color:#F90;
+	font-weight:bold;
+	padding-right:5px;
+}
+
+#athleteList {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+#athleteList table {
+	width:100%;
+	border-collapse: separate;
+    border-spacing: 0 3px;
+	margin-bottom:10px;
+}
+
+#athleteList table td {
+	background:url(../img/grey-opacity.png) repeat;
+}
+
+#athleteList table tr td {
+	margin:0;
+	padding:0;
+	text-align:left;
+	padding-left:10px;
+}
+
+#athleteList table tr td:nth-child(1) {
+	width:5%
+}
+
+#athleteList table tr td:nth-child(2) {
+	width:65%
+}
+
+#athleteList table tr td:nth-child(3) {
+	width:30%
+}
+
+#athleteList table tr:first-child td {
+	background:url(../img/star-small1.png) no-repeat;
+	background-color:#333;
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+	font-size:22px;
+	color: #f7ac08;
 }
 /*
 #footerContainer {

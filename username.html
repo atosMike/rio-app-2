@@ -6,52 +6,22 @@
 	<a href="index.html">Logout</a>
 </p>
 
-<script type="text/javascript">
-    /*jslint browser: true*/
-    /*global $, jQuery, alert*/
-    /*jslint node: true*/
-    "use strict";
-
-    var scores = [];
-    var team;
-
-    function fillTable() {
-
-        $.each(scores, function (index, value) {
-            //if(index<10) { <====== OPTIONAL FOR TOP 10
-            if (value[0] === "Team Chocobo") {
-                $("#currentPoints").html(value[1]);
-            }
-        });
-
-    }
-
-    function sorter(a, b) {
-        return ((a[1] < b[1]) ? 1 : ((a[1] > b[1]) ? -1 : 0));
-    }
-
-    function parseFile(document) {
-
-        $(document).find("table").each(function (i) {
-            if (i > 0) {
-                team = [];
-                team.push($(this).find("[name='username']").text());
-                team.push(parseInt($(this).find("[name='points']").text(), 10));
-                scores.push(team);
-            }
-        });
-
-        scores.sort(sorter);
-        fillTable();
-
-    }
-
+<script>
     $.ajax({
-        url: "xml/leaderboard.xml",
-        dataType: "xml",
-        success: parseFile,
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.log(textStatus, errorThrown);
+    url: "http://co-project.lboro.ac.uk/group07/connect.php",
+    type: "GET",
+    dataType: 'json',
+    error: function (jqXHR, text_status, strError) {
+        alert("no connection");
+    },
+    timeout: 60000,
+    success: function (data) {
+        for (var i in data) {
+            
+            if(data[i][0] === "Team Chocobo") {
+                $("#currentPoints").html(data[i][1]);
+            }
         }
-    });
+    }
+});
 </script>

@@ -13,7 +13,7 @@
 		
 		<div id="footerContainer" class="footer"></div>
 
-		<div class="container" id="mainBody">
+		<div class="container" id="mainBody" style="margin-top:0px;">
 
 			<div id="signIn">
 				
@@ -32,19 +32,20 @@
                 	</ul>
             	</div>
   
-				<form class="form-signin" role="form" onsubmit="javascript:location.href='home.html'; return false;">
+				<form class="form-signin" role="form" onsubmit="login(); return false;">
 					<h2 class="form-signin-heading">Please sign in</h2>
-					<input type="text" class="form-control" placeholder="Username" required autofocus /><br />
-					<input type="password" class="form-control" placeholder="Password" required />
+					<input type="text" class="form-control" placeholder="Username" required autofocus id="userInput"/><br />
+					<input type="password" class="form-control" placeholder="Password" required id="pwdInput"/>
 					<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
 				</form>    
 			</div> 
-			  
+			<br><br><br><br>  
 		</div>
 
 		<script src="js/jquery-1.11.0.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/custom.js"></script>
+		<script src="js/login.js"></script>
 
 	</body>
 </html>
